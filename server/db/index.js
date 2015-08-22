@@ -1,7 +1,47 @@
-var mysql = require('mysql');
+// /* You'll need to
+//  * npm install sequelize
+//  * before running this example. Documentation is at http://sequelizejs.com/
+//  */
+// var mysql = require('mysql');
+// var Sequelize = require("sequelize");
+// var sequelize = new Sequelize("chats", "root", "taco");
+// /* TODO this constructor takes the database name, username, then password.
+//  * Modify the arguments if you need to */
 
-// Create a database connection and export it from this file.
-// You will need to connect with the user "root", no password,
-// and to the database "chat".
+// /* first define the data structure by giving property names and datatypes
+//  * See http://sequelizejs.com for other datatypes you can use besides STRING. */
+// var Users = sequelize.define('users', {
+//   username: Sequelize.STRING,
+//   password: Sequelize.STRING
+// });
 
+// var Messages = sequelize.define('messages', {
+//   user_id: Sequelize.INTEGER,
+//   message: Sequelize.STRING,
+//   room_id: Sequelize.INTEGER
+// });
 
+// var Rooms = sequelize.define('rooms', {
+//   roomname: Sequelize.STRING
+// })
+
+// /* .sync() makes Sequelize create the database table for us if it doesn't
+//  *  exist already: */
+// Users.sync().success(function() {
+//   /* This callback function is called once sync succeeds. */
+
+//   // now instantiate an object and save it:
+//   var newUser = User.build({username: "Jean Valjean"});
+//   newUser.save().success(function() {
+
+//     /* This callback function is called once saving succeeds. */
+
+//     // Retrieve objects from the database:
+//     User.findAll({ where: {username: "Jean Valjean"} }).success(function(usrs) {
+//       // This function is called back with an array of matches.
+//       for (var i = 0; i < usrs.length; i++) {
+//         console.log(usrs[i].username + " exists");
+//       }
+//     });
+//   });
+// });
